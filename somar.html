@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+        <title>Document</title>
+<head>
+   <style>
+       input {
+  margin:10px ;
+       }
+   </style>
+   <script>
+       function calcular () {
+       var v1 = document.getElementById("valor1").value;
+       var v2 = document.getElementById("valor2").value;
+
+       var operação = document.getElementById("oper").value;
+
+       if (operação == "soma") {
+           alert (parseInt(v1) + parseInt(v2));
+           }  else if (operação == "multiplica") {
+           alert (parseInt(v1) * parseInt (v2));
+       }
+    }
+        </script>
+</head>
+
+    
+  <body style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <input type="text" id="valor1">
+        <input type="text" id="valor2">
+
+        <select id="oper">
+                <option value="soma">Soma</option>
+                <option value="multiplica">Multiplicação</option>
+        </select>
+<input type="submit" onclick="calcular();" value="calcular">
+    </section>
+    
+</body>
+</html>
